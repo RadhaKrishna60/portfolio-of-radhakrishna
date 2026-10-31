@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adepu Radha Krishna – Cyber Security & Software Developer</title>
+<meta name="description" content="Portfolio of Adepu Radha Krishna: B.Tech Cyber Security student in Hyderabad building secure web apps and machine learning projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F3FF; --band:#ECE6FB; --ink:#1B1235; --muted:#5E5380; --line:#D3C9EE; --accent:#C42A62; --on-accent:#fff;
+  --display:"Unbounded","Segoe UI",Helvetica,Arial,sans-serif;
+  --body:"DM Sans","Segoe UI",Helvetica,Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#150E29;--band:#1D1438;--ink:#F3EEFF;--muted:#B5A9D6;--line:#33265C;--accent:#FF7A9E;--on-accent:#150E29;}
+}
+:root[data-theme="dark"]{--bg:#150E29;--band:#1D1438;--ink:#F3EEFF;--muted:#B5A9D6;--line:#33265C;--accent:#FF7A9E;--on-accent:#150E29;}
+html{scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 28px}
+.top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px 0}
+.top strong{font:700 .95rem var(--display)}
+.top ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.top a{color:var(--muted);text-decoration:none;font-weight:500}
+.top a:hover{color:var(--accent)}
+.hero{padding:64px 0 80px}
+h1{font:700 clamp(2.4rem,9vw,6.4rem)/1.02 var(--display);letter-spacing:-.04em;margin:0 0 32px}
+.role{font:500 clamp(1.05rem,2.4vw,1.4rem)/1.4 var(--display);margin:0 0 18px;max-width:30ch}
+.lede{max-width:58ch;color:var(--muted);margin:0 0 32px}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 20px;border-radius:999px;border:2px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:700}
+.btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn:hover{transform:translateY(-2px)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section.alt{background:var(--band)}
+.grid{display:grid;grid-template-columns:240px 1fr;gap:24px 48px}
+h2{font:700 1.3rem/1.2 var(--display);margin:0;letter-spacing:-.02em}
+.sticky{position:sticky;top:calc(env(safe-area-inset-top,0px) + 24px);align-self:start}
+.proj{padding:0 0 28px;margin:0 0 28px;border-bottom:1px solid var(--line)}
+.proj:last-child{border:0;margin:0;padding:0}
+.proj h3{font:700 1.2rem/1.3 var(--display);letter-spacing:-.02em;margin:0 0 6px}
+.tech{color:var(--accent);font-weight:700;margin:0 0 10px}
+ul.plain{margin:0;padding-left:1.1em;color:var(--muted)}
+ul.plain li+li{margin-top:4px}
+mark{background:var(--accent);color:var(--on-accent);padding:1px 7px;border-radius:4px;font-weight:700}
+dl{margin:0}
+.row{display:grid;grid-template-columns:170px 1fr;gap:4px 24px;padding:12px 0;border-bottom:1px solid var(--line)}
+.row:first-child{padding-top:0}
+.row dt{font-weight:700}
+.row dd{margin:0;color:var(--muted)}
+.entry+.entry{margin-top:22px}
+.entry h3{font:700 1.1rem/1.3 var(--display);letter-spacing:-.02em;margin:0}
+.entry p{margin:2px 0 0;color:var(--muted)}
+footer{padding:56px 0 72px;border-top:1px solid var(--line)}
+footer h2{margin-bottom:20px}
+@media (max-width:760px){
+  .grid{grid-template-columns:1fr;gap:20px}
+  .sticky{position:static}
+  .row{grid-template-columns:1fr}
+  .hero{padding:40px 0 56px}
+}
+.btn{transition:transform .2s ease,background-color .2s ease}
+.progress{position:fixed;top:env(safe-area-inset-top,0px);left:0;width:100%;height:4px;background:var(--accent);transform:scaleX(0);transform-origin:0 50%;z-index:20}
+.js .reveal{opacity:0;transform:translateY(36px);transition:opacity .7s ease,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
+.js .reveal.from-left{transform:translateX(-36px)}
+.js .reveal.in{opacity:1;transform:none}
+.js .hero h1.reveal{transform:translateY(60px);transition-duration:.9s,1s}
+.js .hero h1.reveal.in{transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}.js .reveal,.js .reveal.from-left,.js .hero h1.reveal{opacity:1;transform:none;transition:none}.progress{display:none}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<div class="wrap">
+  <div class="top">
+    <strong>A. Radha Krishna</strong>
+    <nav aria-label="Sections"><ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+  </div>
+  <div class="hero">
+    <h1>Adepu Radha Krishna</h1>
+    <p class="role">Cyber security student and software developer</p>
+    <p class="lede">I build web applications and machine learning systems with security in mind, and I like solving problems and learning how to make software safer. Based in Hyderabad.</p>
+    <div class="links">
+      <a class="btn primary" href="mailto:radhakrishnaadepu60@gmail.com">Email me</a>
+      <a class="btn" href="https://github.com/RadhaKrishna60" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/RadhaKrishna60" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<section id="projects" class="alt"><div class="wrap grid">
+  <h2 class="sticky">Projects</h2>
+  <div>
+    <article class="proj">
+      <h3>ML-based women’s safety monitoring system</h3>
+      <p class="tech">Python, Django, TensorFlow, Scikit-Learn</p>
+      <ul class="plain">
+        <li>Predicts threats and detects anomalies with machine learning.</li>
+        <li>Includes GPS tracking, emergency alerts and risk classification.</li>
+      </ul>
+    </article>
+    <article class="proj">
+      <h3>Bicycle rental management system</h3>
+      <p class="tech">Python, Flask, SQLite</p>
+      <ul class="plain">
+        <li>Rental platform with user authentication and booking.</li>
+        <li>Secure session management and database integration.</li>
+      </ul>
+    </article>
+    <article class="proj">
+      <h3>Eco-friendly fertilizer recommendation system</h3>
+      <p class="tech">Python, Scikit-Learn</p>
+      <ul class="plain">
+        <li>Recommends fertilizers from agricultural datasets, with about <mark>85% prediction accuracy</mark>.</li>
+      </ul>
+    </article>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap grid">
+  <h2 class="sticky">Skills</h2>
+  <dl>
+    <div class="row"><dt>Languages</dt><dd>Python, Java, C, JavaScript</dd></div>
+    <div class="row"><dt>Web</dt><dd>HTML, CSS, Flask, Django, REST APIs</dd></div>
+    <div class="row"><dt>Machine learning</dt><dd>Scikit-Learn, TensorFlow, Pandas, NumPy</dd></div>
+    <div class="row"><dt>Cyber security</dt><dd>Linux, Kali Linux, Wireshark, OWASP Top 10, network security</dd></div>
+    <div class="row"><dt>Tools</dt><dd>Git, GitHub, VS Code, Firebase, AWS</dd></div>
+    <div class="row"><dt>Core concepts</dt><dd>OOP, data structures and algorithms, DBMS</dd></div>
+    <div class="row"><dt>Working style</dt><dd>Problem solving, teamwork, communication, adaptability, time management, leadership, attention to detail</dd></div>
+  </dl>
+</div></section>
+
+<section id="experience" class="alt"><div class="wrap grid">
+  <h2 class="sticky">Experience</h2>
+  <div class="entry">
+    <h3>Web development intern, Apex Planet</h3>
+    <p>2023</p>
+    <ul class="plain" style="margin-top:10px">
+      <li>Built responsive websites with HTML, CSS and JavaScript.</li>
+      <li>Improved usability and made the sites work across browsers.</li>
+      <li>Delivered project milestones and earned a certification.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap grid">
+  <h2 class="sticky">Education and certifications</h2>
+  <div>
+    <div class="entry">
+      <h3>B.Tech in Cyber Security</h3>
+      <p>Malla Reddy Engineering College, Hyderabad · 2022–2026 · CGPA 7.31/10</p>
+    </div>
+    <div class="entry">
+      <h3>Intermediate (MPC)</h3>
+      <p>Sri Kakatiya Junior College, Godavarikhani · 2020–2022 · 79.5%</p>
+    </div>
+    <div class="entry">
+      <h3>Certifications</h3>
+      <ul class="plain" style="margin-top:8px">
+        <li>Career Essentials in Generative AI, Microsoft and LinkedIn Learning</li>
+        <li>Web Development Certification, Apex Planet</li>
+        <li>Python Programming, Skilltimate Technologies</li>
+        <li>C Programming, Skilltimate Technologies</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+  <h2>Let’s talk</h2>
+  <div class="links">
+    <a class="btn primary" href="mailto:radhakrishnaadepu60@gmail.com">radhakrishnaadepu60@gmail.com</a>
+    <a class="btn" href="https://github.com/RadhaKrishna60" target="_blank" rel="noopener">github.com/RadhaKrishna60</a>
+    <a class="btn" href="https://linkedin.com/in/RadhaKrishna60" target="_blank" rel="noopener">linkedin.com/in/RadhaKrishna60</a>
+  </div>
+</div></footer>
+<script>
+(function(){
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var bar=document.querySelector('.progress');
+  function mark(list,left){
+    list.forEach(function(el,i){
+      el.classList.add('reveal');
+      if(left)el.classList.add('from-left');
+      el.style.setProperty('--d',Math.min(i,6)*90+'ms');
+    });
+  }
+  var groups=[
+    [document.querySelectorAll('.hero > *'),false],
+    [document.querySelectorAll('h2.sticky, footer h2'),true],
+    [document.querySelectorAll('.proj'),false],
+    [document.querySelectorAll('.row'),false],
+    [document.querySelectorAll('.entry'),false],
+    [document.querySelectorAll('footer .links'),false]
+  ];
+  var all=[];
+  groups.forEach(function(g){var l=Array.prototype.slice.call(g[0]);mark(l,g[1]);all=all.concat(l);});
+  if(reduce||!('IntersectionObserver' in window)){all.forEach(function(el){el.classList.add('in');});}
+  else{
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+    all.forEach(function(el){io.observe(el);});
+  }
+  if(bar){
+    var ticking=false;
+    function update(){
+      var h=document.documentElement.scrollHeight-window.innerHeight;
+      bar.style.transform='scaleX('+(h>0?Math.min(window.scrollY/h,1):0)+')';
+      ticking=false;
+    }
+    window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(update);}},{passive:true});
+    update();
+  }
+})();
+</script>
+</body>
+</html>
